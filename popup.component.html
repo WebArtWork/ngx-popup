@@ -1,0 +1,10 @@
+<div class="popup">
+    <button class="popup__button" (click)="onClick()">
+        {{this.show ? 'Close' : 'Open'}}
+    </button>
+
+    <div class="{{this.show ? 'popup__container' : 'hide'}}">
+            <h1 class="popup__title">{{title}}</h1>
+            <p class="popup__text">{{text}}</p>
+    </div>
+</div>
